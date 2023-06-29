@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&family=Rubik+Iso&family=Unica+One&family=VT323&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.header, .about, .contact,.skill, footer {
+  flex: 1; 
+}
+
+.header, .skill, .about,.contact, footer {
+  font-family: 'VT323', monospace;
+}
+
+.header {
+  right: 0;
+  background-color: #0e0f14;
+  padding-bottom: 15%;
+}
+
+.skill {
+  background: linear-gradient(to bottom, #0e0f14 40%, #201b35 100%);
+  padding: 20px 0;
+}
+
+.about {
+  background: linear-gradient(to bottom, #201b35 40%, #17094e 100%);
+  padding: 20px 0;
+  padding-top: 10%;
+}
+
+.contact {
+  background: linear-gradient(to bottom, #17094e 40%, #200b74 100%);
+  padding: 20px 0;
+  color: white;
+} 
+
+footer {
+  background-color: #200b74;
+  color: white;
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+  
+/* 
+font-family: 'Audiowide', cursive;
+font-family: 'Black Ops One', cursive;
+font-family: 'Rubik Iso', cursive;
+font-family: 'Unica One', cursive;
+font-family: 'VT323', monospace;
+font-family: 'ZCOOL QingKe HuangYou', sans-serif; */
+
+.navigation .logo {
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 0;
+  margin-left: 5%;
+  font-size: 3em;
+  font-family: 'Rubik Iso', cursive;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 5%;
+}
+
+.navigation ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 150%;
+}
+
+.links {
+  display: flex;
+  gap: 2%;
+}
+
+.secondary {
+  color:#65b87e;
+}
+
+.introduction {
+  margin-top: 5%;
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  margin-left: -10%;
+}
+
+.introduction-desc {
+  color: whitesmoke;
+  margin-top: 100px;
+  font-size: 2.5vw;
+  font-family: 'VT323', monospace;
+}
+
+.self-image {
+  max-width: 15%;
+  height: fit-content;
+  border-radius: 47%;
+  overflow: hidden;
+}
+
+.skill-title{
+  color: whitesmoke;
+  font-size: 3vw;
+  font-family: 'VT323', monospace;
+  text-align: center;
+}
+
+.gallery-cell {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.763);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  margin-right: 100px;
+  background: rgba(140, 140, 136, 0.5);
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.gallery {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.gallery-cell.is-selected {
+  opacity: 1;
+}
+
+#gallery-cell1.is-selected{
+  background: linear-gradient(to bottom, #499360 70%, #74bc89 100%);
+}
+
+#gallery-cell2.is-selected{
+  background: linear-gradient(to bottom, #499093 70%, #749ebc 100%);
+}
+
+#gallery-cell3.is-selected{
+  background: linear-gradient(to bottom, #494993 70%, #8774bc 100%);
+}
+
+.gallery-cell:before,
+.gallery-cell.is-selected:before {
+  content: none; 
+}
+
+.gallery-cell:not(.is-selected) {
+  filter: blur(5px);
+}
+
+.content-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.gallery .flickity-prev-next-button {
+  display: none;
+}
+
+
+.sub-gallery-cell {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.763);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.502);
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+  margin-top: 5%;
+}
+
+
+.sub-gallery-cell.is-selected {
+  opacity: 1;
+}
+
+.sub-gallery-cell:before,
+.sub-gallery-cell.is-selected:before {
+  content: none; 
+}
+
+.sub-gallery-cell:not(.is-selected) {
+  filter: blur(5px);
+}
+
+.project-image {
+  max-width: 40%;
+  border-radius: 10%;
+}
+
+.project-desc {
+  font-size: 80%;
+  max-width: 40%;
+}
+
+.square {
+  color: white;
+  font-size: larger;
+}
+
+.square p {
+  text-align: center;
+  font-size: 180%;
+}
+
+.square pre {
+  font-family: 'VT323', monospace;
+  font-size: 120%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  padding-bottom: 10%;
+}
+
+.contact a {
+  color: #bfafff;
+  font-size:x-large;
+}
